@@ -4273,7 +4273,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: 70px;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
@@ -4473,6 +4473,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+
 @media (min-width: 768px) {
   .navbar-text {
     float: left;
@@ -4486,10 +4488,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
   .navbar-right {
     float: right !important;
-    margin-right: -15px;
+    margin-right: 40px;
   }
   .navbar-right ~ .navbar-right {
-    margin-right: 0;
+    margin-right: 20;
   }
 }
 .navbar-default {

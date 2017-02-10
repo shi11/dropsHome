@@ -4,35 +4,40 @@
 <title> Audio Drops Homepage </title>
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> <!--Links to css files !-->
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Catamaran:700|Raleway:600|Roboto|Signika:600" rel="stylesheet"> <!--Fonts !-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--Javascript files !-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="assets/js/scroll.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 <header>
-<div class="container">
-<div class="navbar navbar-default navbar-fixed-top"> 
-<div class="navbar-header"> <!--Header files !-->
-<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example"> <!--Button for mobile !-->
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-<span class="icon-bar"></span>
-</button>
-<a href="#" class="navbar-brand"> <img src="assets/img/navbarLogo.png"> </a> <!--Logo or Company name !-->
-</div>
-</div>
-<div class="collapse navbar-collapse navbar-right" id="example">
-<ul class="nav navbar-nav">
-<li class="active"><a href="#"> Home </a></li>
-<li> <a href="#"> About </a> </li>
-<li> <a href="#"> Contact </a></li>
-</ul>
-</div>
-</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="heading" href="#"> AudioDrops </a>
+        </div>
+        <div id="navbar" class="navbar-collapse navbar-right collapse" align="right"> <!--Navigation links on the right side !-->
+          <ul class="nav navbar-nav">
+          <a href="https://itunes.apple.com/us/app/audiodrops/id968485939?mt=8&at=1000l7hs" class="btn btn-primary btn-md btn-stage" role="button"> Download App </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</header>
 <div id="stage">
 <div id="stage-caption">
-<h1> Welcome to a new revolution in sound </h1>
+<h1> Welcome To A New Revolution In Sound </h1>
+<a href="#feature-one" class="btn btn-primary btn-lg" role="button"> Learn More </a>
 </div>
 </div>
 
-<section id="feature-one">
+<section id="feature-one" class="feature-white">
 <div class="container">
 <div class="row">
 <div class="feature-content">
@@ -42,7 +47,7 @@
 <div class="col-lg-5 col-lg-offset-1"> <!-- One column of space in between 6 column and 5 column !-->
 <h6> Imagine this </h6>
 <h2> A social network for audio </h2>
-<p class="lead"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan aliquam fringilla. Ut in turpis ac odio fringilla pulvinar. Duis et convallis lorem. Sed condimentum elit leo, nec rutrum diam mollis at. In leo eros, pretium non odio vel, eleifend tincidunt leo.</p>
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan aliquam fringilla. Ut in turpis ac odio fringilla pulvinar. Duis et convallis lorem. Sed condimentum elit leo, nec rutrum diam mollis at. In leo eros, pretium non odio vel, eleifend tincidunt leo.</p>
 </div>
 </div>
 </div>
@@ -50,21 +55,59 @@
 </section>
 
 
-<section id="feature-two feature-dark">
+<section id="feature-two" class="feature-white"> <!--declare new section with different styling class; edit: may stick to one styling class !-->
 <div class="container">
 <div class="row">
 <div class="feature-content">
 <div class="col-lg-6">
-<h6> Incredible fratures </h6>
+<h6> Incredible features </h6>
 <h2> Some heading </h2>
-<p class="lead">  Aliquam erat volutpat. Suspendisse tincidunt dictum magna eu convallis. Vivamus tortor mauris, posuere vel dui nec, condimentum rutrum ligula. Praesent in porttitor tortor, ac dignissim nunc. Nam et rutrum tortor, ac accumsan ligula. </p>
+<p>  Aliquam erat volutpat. Suspendisse tincidunt dictum magna eu convallis. Vivamus tortor mauris, posuere vel dui nec, condimentum rutrum ligula. Praesent in porttitor tortor, ac dignissim nunc. Nam et rutrum tortor, ac accumsan ligula. </p>
 </div>
-<div class="col-lg-6 text-sm-center"> 
-<img src="assets/img/iphone.jpg" alt="iPhone placeholder image"/>
+<div class="col-lg-6 text-sm-center" align="center"> 
+<div id="screenshotCarousel" class="carousel slide" data-ride="carousel"> <!--Declare carousel !-->
 
+<div class="carousel-inner" role="listbox"> <!-- Begin slide area !-->
+<div class="item active"> <!--Slide 1 !-->
+<img class="d-block img-fluid" src="assets/img/screenshots/01.jpg"> <!-- Prevent browser default alignment with d-block and img-fluid !-->
+</div>
+<div class="item"> <!--Slide 2 !-->
+<img class="d-block img-fluid" src="assets/img/screenshots/02.jpg">
+</div>
+<div class="item"> <!--Slide 3 !-->
+<img class="d-block img-fluid" src="assets/img/screenshots/03.jpg">
+</div>
+<div class="item"> <!--Slide 4 !-->
+<img class="d-block img-fluid" src="assets/img/screenshots/04.jpg">
+</div>
+
+<!--Navigation controls !-->
+<a class="left carousel-control" href="#screenshotCarousel" data-slide="prev">
+<i class="glyphicon glyphicon-chevron-left"></i>
+</a>
+<a class="right carousel-control" href="#screenshotCarousel" data-slide="next">
+<i class="glyphicon glyphicon-chevron-right"></i>
+</a>
+
+</div> <!-- End slide area !-->
+</div>
 </div>
 </div>
 </div>
 </div>
 </section>
 
+<section id="feature-three">
+<div id="container">
+<div id="featureImage">
+<div id="feature-caption">
+<h2> Interactive Sound </h2>
+<p class="lead"> Discover new places. Listen to the music of the world.</br> Interact with those around you. Engage your auditory senses  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</body>
+</html>

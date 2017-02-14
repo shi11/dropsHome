@@ -4,14 +4,34 @@
 <title> Audio Drops Homepage </title>
 <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css"> <!--Links to css files !-->
 <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+<link rel="stylesheet" type="text/css" href="assets/css/colorbox.css">
 <link href="https://fonts.googleapis.com/css?family=Catamaran:700|Raleway:600|Roboto|Signika:600" rel="stylesheet"> <!--Fonts !-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--Javascript files !-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+<script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
 <script src="assets/js/scroll.js"></script>
+<!--<script type="text/javascript"> //open video in jquery lightbox
+$(document).ready(function() {
+	$(".various").fancybox({
+		maxWidth	: 800,
+		maxHeight	: 600,
+		fitToView	: false,
+		width		: '70%',
+		height		: '70%',
+		autoSize	: false,
+		closeClick	: false,
+		openEffect	: 'none',
+		padding     : 0,
+		closeEffect	: 'none'
+	});
+});
+</script>!-->
 </head>
 <body data-spy="scroll" data-target="#navbar">
 <header>
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-bottom">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,87 +44,41 @@
         </div>
         <div id="navbar" class="navbar-collapse navbar-right collapse" align="right"> <!--Navigation links on the right side !-->
           <ul class="nav navbar-nav">
-          <a href="https://itunes.apple.com/us/app/audiodrops/id968485939?mt=8&at=1000l7hs" class="btn btn-primary btn-md btn-stage" role="button"> Download App </a>
+          <a href="https://www.facebook.com/Drops-1375738159399981/"><img src="assets/img/facebook.png" width="40" height="40"></a>
+          <a href="http://twitter.com/dropsAudio"><img src="assets/img/twitter.png" width="30" height="30"></a>
+          <a href="http://instagram.com/dropsAudio"><img src="assets/img/instagram.png" width="30" height="30"></a>
+          <a href="https://angel.co/wox?follow=1&type=Startup&id=864632"><img src="assets/img/angel.png" width="35" height="35"></a>
           </ul>
         </div>
       </div>
     </nav>
 </header>
 <div id="stage">
+
 <div id="stage-caption">
-<h1> Welcome To A New Revolution In Sound </h1>
-<a href="#feature-one" class="btn btn-primary btn-lg" role="button"> Learn More </a>
+<h1> A Social Playlist for the Places You Go</h1>
+<a href="https://player.vimeo.com/video/168947204" class="various fancybox.iframe btn btn-primary btn-lg" role="button"> Watch Video </a>
+</br>
+</br>
+<a href="https://itunes.apple.com/us/app/audiodrops/id968485939?mt=8"><img src="assets/img/ios.svg" border="0"></a>
 </div>
 </div>
 
 <section id="feature-one" class="feature-white">
-<div class="container">
-<div class="row">
-<div class="feature-content">
-<div class="col-lg-6">
-<iframe src="https://player.vimeo.com/video/168947204" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div>
-<div class="col-lg-5 col-lg-offset-1"> <!-- One column of space in between 6 column and 5 column !-->
-<h6> Imagine this </h6>
-<h2> A social network for audio </h2>
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean accumsan aliquam fringilla. Ut in turpis ac odio fringilla pulvinar. Duis et convallis lorem. Sed condimentum elit leo, nec rutrum diam mollis at. In leo eros, pretium non odio vel, eleifend tincidunt leo.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
-<section id="feature-two" class="feature-white"> <!--declare new section with different styling class; edit: may stick to one styling class !-->
-<div class="container">
-<div class="row">
-<div class="feature-content">
-<div class="col-lg-6">
-<h6> Incredible features </h6>
-<h2> Some heading </h2>
-<p>  Aliquam erat volutpat. Suspendisse tincidunt dictum magna eu convallis. Vivamus tortor mauris, posuere vel dui nec, condimentum rutrum ligula. Praesent in porttitor tortor, ac dignissim nunc. Nam et rutrum tortor, ac accumsan ligula. </p>
-</div>
-<div class="col-lg-6 text-sm-center" align="center"> 
-<div id="screenshotCarousel" class="carousel slide" data-ride="carousel"> <!--Declare carousel !-->
-
-<div class="carousel-inner" role="listbox"> <!-- Begin slide area !-->
-<div class="item active"> <!--Slide 1 !-->
-<img class="d-block img-fluid" src="assets/img/screenshots/01.jpg"> <!-- Prevent browser default alignment with d-block and img-fluid !-->
-</div>
-<div class="item"> <!--Slide 2 !-->
-<img class="d-block img-fluid" src="assets/img/screenshots/02.jpg">
-</div>
-<div class="item"> <!--Slide 3 !-->
-<img class="d-block img-fluid" src="assets/img/screenshots/03.jpg">
-</div>
-<div class="item"> <!--Slide 4 !-->
-<img class="d-block img-fluid" src="assets/img/screenshots/04.jpg">
-</div>
-
-<!--Navigation controls !-->
-<a class="left carousel-control" href="#screenshotCarousel" data-slide="prev">
-<i class="glyphicon glyphicon-chevron-left"></i>
-</a>
-<a class="right carousel-control" href="#screenshotCarousel" data-slide="next">
-<i class="glyphicon glyphicon-chevron-right"></i>
-</a>
-
-</div> <!-- End slide area !-->
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section id="feature-three">
 <div id="container">
-<div id="featureImage">
-<div id="feature-caption">
-<h2> Interactive Sound </h2>
-<p class="lead"> Discover new places. Listen to the music of the world.</br> Interact with those around you. Engage your auditory senses  </p>
+<div class="row">
+<div class="feature-content">
+<div class="col-md-4">
+<h2> A New Dimension </h2>
+<p class="lead"> Share and discover sounds within scenery </p>
 </div>
 </div>
+</div>
+<div class="map-wrap">
+    <div class="overlay" onClick="style.pointerEvents='none'"></div><!-- wrap map iframe to turn off mouse scroll and turn it back on on click -->
+
+        <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1xPyRrltjq3Dbto_5VS2TcTZjKC4" width="600" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 </div>
 </div>
 </div>

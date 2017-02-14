@@ -14,8 +14,14 @@ h1, h2, h3,h4, h5 {
 }
 
 h1 { 
+	font-size: 28px;
 	color: white;
 	text-align: center;
+}
+
+h2 {
+	font-size: 36px;
+	color: #1e104c ;
 }
 
 h6 {
@@ -50,14 +56,6 @@ img {
 }
 
 
-
-#stage-heading {
-	text-align: center;
-	margin-top: 0%;
-	margin-left: 30%;
-	display: flex;
-	font-size: 32px;
-}
 #stage { /*top of page */
 	background: url('stage.jpg') center center no-repeat;
 	background-size: cover;
@@ -65,26 +63,34 @@ img {
 	display: flex;
 	height: 700px;
 	width: 100%;
-	opacity: 0.8;
+	opacity: 1;
 }
 
-#featureImage { /* map of central park */
-	background: url('centralParkWalk.png') center center no-repeat;
-	background-size: cover;
-	color: black;
-	display: flex;
-	height: 700px;
-	width: 100%;
+.map {
+	width:90%;
+	height:800px;
+	border-radius: 20px 20px 20px 20px;
+	text-align: center;	
 }
 
+.map-wrap {
+	position:relative; 
+	text-align: center;
+}
+	
+.overlay {
+	width:100%;
+	min-height:500px; 
+	position:absolute; 
+	top:0;
+}
 
 #stage-caption {
 	font-size: 1.4rem;
-	font-weight: 200;
 	max-width: 60rem;
 	text-align: center; /*Align all text, images, and buttons inside div to center */
-	margin-top: 25%;
-	margin-left: 30%;
+	margin-top: 35%;
+	margin-left: 55%;
 }
 
 #feature-caption{
@@ -95,8 +101,8 @@ img {
 }
 
 .feature-content {
-	padding: 5rem 0;
-	overflow: hidden;
+	text-align: left;
+	margin-left: 5%;
 }
 
 .feature-white {
@@ -131,7 +137,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,
     position: fixed;
     width: 100%;
     height: 50px;
-    background-color: #eaeaea;
+    background-color: transparent;
     /*top left, top right, bottom left, bottom right */
     border-radius: 0px 0px 30px 30px; 
     -moz-border-radius: 0px 0px 30px 30px; 

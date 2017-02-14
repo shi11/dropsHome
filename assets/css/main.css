@@ -90,7 +90,7 @@ img {
 	max-width: 60rem;
 	text-align: center; /*Align all text, images, and buttons inside div to center */
 	margin-top: 35%;
-	margin-left: 55%;
+	margin-left: 43%;
 }
 
 #feature-caption{
@@ -104,6 +104,13 @@ img {
 	text-align: left;
 	margin-left: 5%;
 }
+
+.title {
+	margin-top: 10%;
+	padding: 20px;
+
+}
+
 
 .feature-white {
 	/*auto generated gradient from cssmatic.com */
@@ -134,7 +141,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,
 		max-width: 60rem;
 		text-align: center; /*Align all text, images, and buttons inside div to center */
 		margin-top: 50%;
-		margin-left: 55%;
+		margin-left: 38%;
 	}
 
 	h1 {
@@ -143,18 +150,24 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,
 }
 
 @media screen and ( max-width: 500px){
-		#stage-caption {
+	#stage-caption {
 		font-size: 0.6rem;
 		max-width: 60rem;
 		text-align: center; /*Align all text, images, and buttons inside div to center */
 		margin-top: 90%;
-		margin-left: 50%;
+		margin-left: 43%;
 	}
 
 	h1 {
 		font-size: 18px;
 	}
-}
+
+	.title {
+		margin-top: 30%;
+	}
+	.title h1{
+		color: #098896;
+	}
 }
 
 .carousel-inner { /*set slides inside carousel to 60% of actual size */

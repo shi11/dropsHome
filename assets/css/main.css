@@ -135,7 +135,7 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,
 	}
 }
 
-@media screen and ( max-width: 1030px) {
+@media screen and ( max-width: 1030px) { /*for most medium size displays */
 	#stage-caption {
 		font-size: 0.8rem;
 		max-width: 60rem;
@@ -149,23 +149,24 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,
 	}
 }
 
-@media screen and ( max-width: 500px){
+@media screen and ( max-width: 500px){ /*for smaller phone screens */
 	#stage-caption {
-		font-size: 0.6rem;
+		font-size: 0.4rem;
 		max-width: 60rem;
 		text-align: center; /*Align all text, images, and buttons inside div to center */
 		margin-top: 90%;
-		margin-left: 43%;
+		margin-left: 40%;
 	}
 
 	h1 {
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	.title {
 		margin-top: 30%;
 	}
 	.title h1{
+		font-size: 16px;
 		color: #098896;
 	}
 }

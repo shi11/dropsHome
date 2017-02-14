@@ -142,17 +142,17 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,
 	}
 }
 
-@media screen and ( max-width: 620px){
+@media screen and ( max-width: 500px){
 		#stage-caption {
 		font-size: 0.6rem;
 		max-width: 60rem;
 		text-align: center; /*Align all text, images, and buttons inside div to center */
-		margin-top: 85%;
+		margin-top: 90%;
 		margin-left: 50%;
 	}
 
 	h1 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 }
 }

@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css?family=Catamaran:700|Raleway:600|Roboto|Signika:600" rel="stylesheet"> <!--Fonts !-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--Javascript files !-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--Mailchimp form!-->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+
 <!-- Add fancyBox -->
 <link rel="stylesheet" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
 <script type="text/javascript" src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.6"></script>
@@ -33,27 +36,6 @@ $(document).ready(function() {
 </head>
 <body data-spy="scroll" data-target="#navbar">
 <header>
-<nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="heading" href="#"> AudioDrops </a>
-        </div>
-        <div id="navbar" class="navbar-collapse navbar-right collapse" align="right"> <!--Navigation links on the right side !-->
-          <ul class="nav navbar-nav">
-          <a href="https://www.facebook.com/Drops-1375738159399981/"><img src="assets/img/facebook.png" width="40" height="40"></a>
-          <a href="http://twitter.com/dropsAudio"><img src="assets/img/twitter.png" width="30" height="30"></a>
-          <a href="http://instagram.com/dropsAudio"><img src="assets/img/instagram.png" width="30" height="30"></a>
-          <a href="https://angel.co/wox?follow=1&type=Startup&id=864632"><img src="assets/img/angel.png" width="35" height="35"></a>
-          </ul>
-        </div>
-      </div>
-    </nav>
 </header>
 <div id="stage">
 <div id="row">
@@ -72,24 +54,90 @@ $(document).ready(function() {
 </div>
 </div>
 
-<section id="feature-one" class="feature-white">
+<section id="feature-one">
 <div id="container">
 <div class="row">
 <div class="feature-content">
 <div class="col-md-8">
-<h2> A New Dimension </h2>
-<p class="lead"> Share and discover sounds within scenery </p>
-</div>
-</div>
-</div>
-<div class="map-wrap">
-    <div class="overlay" onClick="style.pointerEvents='none'"></div><!-- wrap map iframe to turn off mouse scroll and turn it back on on click -->
+<h2> Sign Up For Our Mailing List </h2>
+<p class="lead"> Be the first to know about updates to our App </p>
 
-        <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1xPyRrltjq3Dbto_5VS2TcTZjKC4" width="600" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="mc_embed_signup">
+<form action="//nyc.us2.list-manage.com/subscribe/post?u=9a9f1e52323f82d052187a0f0&amp;id=d53732570e"
+method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+class="validate" target="_blank" novalidate>
+<div id="mc_embed_signup_scroll">
+</div>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+<label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+</label>
+<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+<label for="mce-HOW">How'd you hear about AudioDrops? </label>
+<input type="text" value="" name="HOW" class="" id="mce-HOW">
+</div>
+<div class="mc-field-group">
+<label for="mce-FNAME">First Name </label>
+<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+<label for="mce-MMERGE3">Last Name </label>
+<input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+</div>
+<div id="mce-responses" class="clear">
+<div class="response" id="mce-error-response" style="display:none"></div>
+<div class="response" id="mce-success-response" style="display:none"></div>
+</div>
+<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                          name="b_9a9f1e52323f82d052187a0f0_d53732570e"
+                          tabindex="-1"
+                          value=""></div>
+<div class="clear"><input type="submit" value="Sign up" name="subscribe"
+id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>(function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'WHO';
+        ftypes[1] = 'radio';
+        fnames[2] = 'HOW';
+        ftypes[2] = 'text';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);</script>
 
 </div>
 </div>
 </div>
 </section>
+<div class="panel panel-default">
+<div class="panel-body">
+<div class="row">
+<div class="col-md-4">
+<a class="heading" href="#"> AudioDrops </a>
+</div>
+<div class="col-md-4">
+<ul align="center">
+<a href="#">Privacy Policy </a>
+<a href="#">Terms of Service</a>
+</ul>
+</div>
+<div class="col-md-4">
+<ul align="right">
+          <a href="https://www.facebook.com/Drops-1375738159399981/"><img src="assets/img/facebook.png" width="40" height="40"></a>
+          <a href="http://twitter.com/dropsAudio"><img src="assets/img/twitter.png" width="30" height="30"></a>
+          <a href="http://instagram.com/dropsAudio"><img src="assets/img/instagram.png" width="30" height="30"></a>
+          <a href="https://angel.co/wox?follow=1&type=Startup&id=864632"><img src="assets/img/angel.png" width="35" height="35"></a>
+</ul>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>

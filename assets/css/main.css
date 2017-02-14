@@ -6,6 +6,14 @@ body {
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 	color: #6c6f73 ;
+		/*auto generated gradient from cssmatic.com */
+	background: rgba(255,255,255,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(91%, rgba(240,240,240,1)), color-stop(100%, rgba(240,240,240,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
 }
 
 h1, h2, h3,h4, h5 {
@@ -66,25 +74,6 @@ img {
 	opacity: 1;
 }
 
-.map {
-	width:90%;
-	height:800px;
-	border-radius: 20px 20px 20px 20px;
-	text-align: center;	
-}
-
-.map-wrap {
-	position:relative; 
-	text-align: center;
-}
-	
-.overlay {
-	width:100%;
-	min-height:500px; 
-	position:absolute; 
-	top:0;
-}
-
 #stage-caption {
 	font-size: 1.4rem;
 	max-width: 60rem;
@@ -103,24 +92,13 @@ img {
 .feature-content {
 	text-align: left;
 	margin-left: 5%;
+	padding: 10px;
 }
 
 .title {
 	margin-top: 10%;
 	padding: 20px;
 
-}
-
-
-.feature-white {
-	/*auto generated gradient from cssmatic.com */
-	background: rgba(255,255,255,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(51%, rgba(255,255,255,1)), color-stop(91%, rgba(240,240,240,1)), color-stop(100%, rgba(240,240,240,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
-background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 51%, rgba(240,240,240,1) 91%, rgba(240,240,240,1) 100%);
 }
 
 .feature-dark {
@@ -188,4 +166,36 @@ background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,
     border: 0px;
     opacity: 0;
     padding: 10px;
+}
+/*form styles, imported from original drops site */
+#mc_embed_signup form {
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 3%;
+}
+
+#mc_embed_signup .indicates-required {
+    text-align: right;
+    font-size: 11px;
+    margin-right: 4%;
+}
+
+#mc_embed_signup .mc-field-group {
+    clear: left;
+    position: relative;
+    width: 96%;
+    padding-bottom: 3%;
+    min-height: 50px;
+}
+
+#mc_embed_signup .mc-field-group label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+#mc_embed_signup .mc-field-group input {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    text-indent: 2%;
 }

@@ -65,21 +65,25 @@ img {
 
 
 #stage { /*top of page */
-	background: url('stage.jpg') center center no-repeat;
-	background-size: cover;
+	/* background: url('stage.jpg') center center no-repeat; no transparency */
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url('stage.jpg'); /*adds transperency but image is not full width anymore */
+	background-size: cover; /*spreads the bg image across the available viewport */
 	color: white;
 	display: flex;
-	height: 700px;
+	height: 100vh; /*set height to 100% of viewport height */
 	width: 100%;
 	opacity: 1;
+	z-index: -10;
 }
 
+
+
 #stage-caption {
-	font-size: 1.4rem;
-	max-width: 60rem;
-	text-align: center; /*Align all text, images, and buttons inside div to center */
-	margin-top: 35%;
-	margin-left: 43%;
+	width: 100%;
+	display: flex;
+	align-items: center; /*center vertically */
+	justify-content: center;  /*center horizontally */
+	text-align: center; /*align all content inside container to center */
 }
 
 #feature-caption{
@@ -110,42 +114,6 @@ img {
 	.feature-content {
 		display: flex;
 		align-items: center;
-	}
-}
-
-@media screen and ( max-width: 1030px) { /*for most medium size displays */
-	#stage-caption {
-		font-size: 0.8rem;
-		max-width: 60rem;
-		text-align: center; /*Align all text, images, and buttons inside div to center */
-		margin-top: 50%;
-		margin-left: 38%;
-	}
-
-	h1 {
-		font-size: 20px;
-	}
-}
-
-@media screen and ( max-width: 500px){ /*for smaller phone screens */
-	#stage-caption {
-		font-size: 0.4rem;
-		max-width: 60rem;
-		text-align: center; /*Align all text, images, and buttons inside div to center */
-		margin-top: 90%;
-		margin-left: 40%;
-	}
-
-	h3 {
-		font-size: 16px;
-	}
-
-	.title {
-		margin-top: 30%;
-	}
-	.title h1{
-		font-size: 16px;
-		color: #098896;
 	}
 }
 
